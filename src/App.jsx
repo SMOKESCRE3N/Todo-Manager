@@ -34,11 +34,13 @@ import TodoItem from './components/TodoItem';
 
    return (
     <TodoProvider value={{todos,addTodo,deleteTodo,updateTodo,toggleComplete}}>
-    <div className="bg-[#172842] min-h-screen bg-[url('/todolist.jpeg')]
+    <div className="bg-[#172842] min-h-screen bg-no-repeat bg-[url('/todobgn2.png')]  bg-fixed  bg-cover
  py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                    <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
-                    <div className="mb-4">
+                    <h1 className="text-9xl transition-all duration-200 font-semibold text-center mb-4 mt-4 text-pink-100  hover:drop-shadow-[0_0_10px_rgb(0,0,0)] "
+                        style={{textShadow: '0 0 20px #0000FF'}}
+                    >To Do</h1>
+                    <div className="mb-4 mt-16">
                         {/* Todo form goes here */} 
                         <TodoForm/>
                     </div>
